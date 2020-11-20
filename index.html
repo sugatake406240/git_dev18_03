@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta http-equiv="X-UA-Compatible" content="ie=edge">
+<title><javascript３回目</title>
+<link rel="stylesheet" href="css/reset.css">
+<link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+  <div>
+    <div class='read' style="font-size: 2.5rem;" >読み込み</div>
+
+
+    <div class="newitem" ><!-- 追加処理 -->
+      <div class="inputarea" ><!-- 選択 -->
+        <div>
+          <p  style="font-size: 2.5rem;">新規追加</p>
+          <!-- ファイル選択 -->
+          <input id="dummy_file" type="text" style="margin-top: 5px;" >
+          <label for="filename1" >
+          　<span class="browse_btn">ファイル選択</span>
+            <input type="file" size="16" id="filename1">
+          </label>
+        </div> 
+        <div style="margin-top: 10px;  padding-left: 0px;">
+          <form id="form1" action="#">
+            <input type="text" id="input_message" value="" >
+            <input id="ad_click" type="button"  class="append_btn" value="コメント入力・登録" >
+          </form>
+        </div>  
+      </div><!-- //ファイル選択 -->
+ 
+      <section>
+      <div class="disparea" ><!--画像表示  -->
+        <div class="selpic" id="selpic_disp">
+            <p>　</p>
+      </div><!--//画像表示  -->
+    </section>
+    </div>
+
+<!-- クリア処理 -->
+    <div class="clear"  >
+      <div  style="font-size: 2.5rem;">クリア</div>
+    </div>
+  </div>
+
+
+  <div id="gallery">
+    <div class="main" id="top" style="width: 400px; margin: auto;"  >
+    </div>
+    <div class="thumb" id="sum" style="text-align: left;">
+    </div>
+  </div>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+  <script src="js/app.js"></script>
+</body>
+</html>
